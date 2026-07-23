@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -15,35 +17,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: "https://ledgerio.in/ai-accounting",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://ledgerio.in/gst-billing",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://ledgerio.in/inventory",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://ledgerio.in/reports",
-      lastModified: new Date(),
-    },
-    {
       url: "https://ledgerio.in/pricing",
       lastModified: new Date(),
     },
     {
       url: "https://ledgerio.in/contact",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://ledgerio.in/privacy-policy",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://ledgerio.in/terms",
       lastModified: new Date(),
     },
   ];
