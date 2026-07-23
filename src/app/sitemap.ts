@@ -7,7 +7,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: "https://ledgerio.in/about",
+      lastModified: new Date(),
+    },
+    {
       url: "https://ledgerio.in/features",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ledgerio.in/ai-accounting",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ledgerio.in/gst-billing",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ledgerio.in/inventory",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ledgerio.in/reports",
       lastModified: new Date(),
     },
     {
@@ -16,6 +36,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://ledgerio.in/contact",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ledgerio.in/privacy-policy",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://ledgerio.in/terms",
       lastModified: new Date(),
     },
   ];
