@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-surface text-ink dark:bg-surface-dark dark:text-ink-dark antialiased;
+  }
+  ::selection {
+    @apply bg-brand-violet/25;
+  }
+  /* Accessible, visible focus states everywhere — never suppressed */
+  :focus-visible {
+    outline: 2px solid #7C6FF2;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 dark:bg-white/[0.04] backdrop-blur-xl border border-black/5 dark:border-white/[0.08];
+  }
+  .glass-strong {
+    @apply bg-white/90 dark:bg-surface-card-dark/90 backdrop-blur-2xl border border-black/5 dark:border-white/10;
+  }
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-8;
+  }
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink dark:bg-white text-white dark:text-ink px-6 py-3 text-sm font-semibold transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-surface-border dark:border-surface-border-dark px-6 py-3 text-sm font-semibold text-ink dark:text-ink-dark transition-colors hover:bg-surface-card dark:hover:bg-white/5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
